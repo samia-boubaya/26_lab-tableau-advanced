@@ -1,0 +1,2981 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xml:base='https://localhost:8080' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <ParameterAction />
+    <ParameterActionClearSelection />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260?rev=1.2' id='LabTableau_17750519672260' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='ColorCenter' datatype='integer' name='[ColorCenter]' param-domain-type='any' role='measure' type='quantitative' value='3150'>
+        <calculation class='tableau' formula='3150' />
+      </column>
+    </datasource>
+    <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' inline='true' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='we_fn_use_c_marketing_customer_value_analysis' name='excel-direct.1okoxet0tag1h8114ob900jbmk4g'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1okoxet0tag1h8114ob900jbmk4g' name='we_fn_use_c_marketing_customer_' table='[we_fn_use_c_marketing_customer_$]' type='table'>
+          <columns gridOrigin='A1:X9135:no:A1:X9135:0' header='yes' outcome='2'>
+            <column datatype='string' name='Customer' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='real' name='Customer Lifetime Value' ordinal='2' />
+            <column datatype='string' name='Response' ordinal='3' />
+            <column datatype='string' name='Coverage' ordinal='4' />
+            <column datatype='string' name='Education' ordinal='5' />
+            <column datatype='string' name='Effective To Date' ordinal='6' />
+            <column datatype='string' name='EmploymentStatus' ordinal='7' />
+            <column datatype='string' name='Gender' ordinal='8' />
+            <column datatype='integer' name='Income' ordinal='9' />
+            <column datatype='string' name='Location Code' ordinal='10' />
+            <column datatype='string' name='Marital Status' ordinal='11' />
+            <column datatype='integer' name='Monthly Premium Auto' ordinal='12' />
+            <column datatype='integer' name='Months Since Last Claim' ordinal='13' />
+            <column datatype='integer' name='Months Since Policy Inception' ordinal='14' />
+            <column datatype='integer' name='Number of Open Complaints' ordinal='15' />
+            <column datatype='integer' name='Number of Policies' ordinal='16' />
+            <column datatype='string' name='Policy Type' ordinal='17' />
+            <column datatype='string' name='Policy' ordinal='18' />
+            <column datatype='string' name='Renew Offer Type' ordinal='19' />
+            <column datatype='string' name='Sales Channel' ordinal='20' />
+            <column datatype='real' name='Total Claim Amount' ordinal='21' />
+            <column datatype='string' name='Vehicle Class' ordinal='22' />
+            <column datatype='string' name='Vehicle Size' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:X9135:no:A1:X9135:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Customer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Lifetime Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customer Lifetime Value]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Customer Lifetime Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Response</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Response]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Response</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coverage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Coverage]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Coverage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effective To Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Effective To Date]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Effective To Date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentStatus</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EmploymentStatus]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>EmploymentStatus</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Code]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Location Code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly Premium Auto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Monthly Premium Auto]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Monthly Premium Auto</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months Since Last Claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months Since Last Claim]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Months Since Last Claim</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months Since Policy Inception</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months Since Policy Inception]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Months Since Policy Inception</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Open Complaints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Open Complaints]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Number of Open Complaints</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Policies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Policies]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Number of Policies</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Policy Type]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Policy Type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Policy]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Policy</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Renew Offer Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Renew Offer Type]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Renew Offer Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Channel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sales Channel]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Sales Channel</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Claim Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Claim Amount]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Total Claim Amount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle Class]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Vehicle Class</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Size</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle Size]</local-name>
+            <parent-name>[we_fn_use_c_marketing_customer_]</parent-name>
+            <remote-alias>Vehicle Size</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='Female' />
+          <alias key='&quot;M&quot;' value='Male' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Location Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='we_fn_use_c_marketing_customer_' datatype='table' name='[__tableau_internal_object_id__].[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]' role='measure' type='quantitative' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1v107vp0v4jk7k1ax1ao21lg5jq1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/01/2026 02:46:44 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>1</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Lifetime Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customer Lifetime Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Lifetime Value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4310</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Response</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Response]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Response</remote-alias>
+              <ordinal>3</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coverage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Coverage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coverage</remote-alias>
+              <ordinal>4</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>5</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Effective To Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Effective To Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Effective To Date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmploymentStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmploymentStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmploymentStatus</remote-alias>
+              <ordinal>7</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>9</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3256</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Code</remote-alias>
+              <ordinal>10</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital Status</remote-alias>
+              <ordinal>11</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monthly Premium Auto</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Monthly Premium Auto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monthly Premium Auto</remote-alias>
+              <ordinal>12</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months Since Last Claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Months Since Last Claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months Since Last Claim</remote-alias>
+              <ordinal>13</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months Since Policy Inception</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Months Since Policy Inception]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months Since Policy Inception</remote-alias>
+              <ordinal>14</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Open Complaints</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Open Complaints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Open Complaints</remote-alias>
+              <ordinal>15</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Policies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Policies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Policies</remote-alias>
+              <ordinal>16</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Policy Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy Type</remote-alias>
+              <ordinal>17</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Policy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy</remote-alias>
+              <ordinal>18</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Renew Offer Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Renew Offer Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Renew Offer Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sales Channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales Channel</remote-alias>
+              <ordinal>20</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Claim Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Claim Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Claim Amount</remote-alias>
+              <ordinal>21</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2337</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Class</remote-alias>
+              <ordinal>22</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Size</remote-alias>
+              <ordinal>23</ordinal>
+              <family>we_fn_use_c_marketing_customer_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LFR_RFR_S2' />
+              <object-id>[we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='we_fn_use_c_marketing_customer_' id='we!fn!use!c!marketing!customer!_5B00B7227D6947389F2FBDCFF8B92AC0'>
+            <properties context=''>
+              <relation connection='excel-direct.1okoxet0tag1h8114ob900jbmk4g' name='we_fn_use_c_marketing_customer_' table='[we_fn_use_c_marketing_customer_$]' type='table'>
+                <columns gridOrigin='A1:X9135:no:A1:X9135:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Customer' ordinal='0' />
+                  <column datatype='string' name='State' ordinal='1' />
+                  <column datatype='real' name='Customer Lifetime Value' ordinal='2' />
+                  <column datatype='string' name='Response' ordinal='3' />
+                  <column datatype='string' name='Coverage' ordinal='4' />
+                  <column datatype='string' name='Education' ordinal='5' />
+                  <column datatype='string' name='Effective To Date' ordinal='6' />
+                  <column datatype='string' name='EmploymentStatus' ordinal='7' />
+                  <column datatype='string' name='Gender' ordinal='8' />
+                  <column datatype='integer' name='Income' ordinal='9' />
+                  <column datatype='string' name='Location Code' ordinal='10' />
+                  <column datatype='string' name='Marital Status' ordinal='11' />
+                  <column datatype='integer' name='Monthly Premium Auto' ordinal='12' />
+                  <column datatype='integer' name='Months Since Last Claim' ordinal='13' />
+                  <column datatype='integer' name='Months Since Policy Inception' ordinal='14' />
+                  <column datatype='integer' name='Number of Open Complaints' ordinal='15' />
+                  <column datatype='integer' name='Number of Policies' ordinal='16' />
+                  <column datatype='string' name='Policy Type' ordinal='17' />
+                  <column datatype='string' name='Policy' ordinal='18' />
+                  <column datatype='string' name='Renew Offer Type' ordinal='19' />
+                  <column datatype='string' name='Sales Channel' ordinal='20' />
+                  <column datatype='real' name='Total Claim Amount' ordinal='21' />
+                  <column datatype='string' name='Vehicle Class' ordinal='22' />
+                  <column datatype='string' name='Vehicle Size' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <edit-parameter-action caption='ParameterColorCenter1 1 1' name='[Action3_4FB6B170E8724CBE9D5E166305F2F561]'>
+      <activation type='on-select' />
+      <source dashboard='previous_dashboard' type='sheet' worksheet='State Treemap' />
+      <agg-type type='median' />
+      <clear-option type='do-nothing' value='i:1' />
+      <params>
+        <param name='source-field' value='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' />
+        <param name='target-parameter' value='[Parameters].[ColorCenter]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name=' Gender Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Gender Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/GenderDistribution?rev=' id='128602339' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+            <format attr='display' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='display' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</rows>
+        <cols>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</cols>
+        <mark-labels>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4476</value>
+                <value>&quot;M&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4658</value>
+                <value>&quot;F&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{B1D00598-86E3-40EB-B0E2-B323A081829C}' />
+    </worksheet>
+    <worksheet name='Employment/Gender (bars)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Employment by Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/EmploymentGenderbars?rev=' id='128602340' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmploymentStatus]' derivation='None' name='[none:EmploymentStatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Employed&quot;</bucket>
+              <bucket>&quot;Unemployed&quot;</bucket>
+              <bucket>&quot;Medical Leave&quot;</bucket>
+              <bucket>&quot;Disabled&quot;</bucket>
+              <bucket>&quot;Retired&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+            <format attr='title' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='Customers' />
+            <format attr='display' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='display' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+                <format attr='minheight' value='142' />
+                <format attr='maxheight' value='142' />
+                <format attr='minwidth' value='62' />
+                <format attr='maxwidth' value='62' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</rows>
+        <cols>([federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk] / [federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk])</cols>
+        <mark-labels>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2937</value>
+                <value>&quot;Employed&quot;</value>
+                <value>&quot;F&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2761</value>
+                <value>&quot;Employed&quot;</value>
+                <value>&quot;M&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>214</value>
+                <value>&quot;Medical Leave&quot;</value>
+                <value>&quot;F&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>218</value>
+                <value>&quot;Medical Leave&quot;</value>
+                <value>&quot;M&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>128</value>
+                <value>&quot;Retired&quot;</value>
+                <value>&quot;F&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>244</value>
+                <value>&quot;Disabled&quot;</value>
+                <value>&quot;F&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>161</value>
+                <value>&quot;Disabled&quot;</value>
+                <value>&quot;M&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>154</value>
+                <value>&quot;Retired&quot;</value>
+                <value>&quot;M&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1135</value>
+                <value>&quot;Unemployed&quot;</value>
+                <value>&quot;F&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1182</value>
+                <value>&quot;Unemployed&quot;</value>
+                <value>&quot;M&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{8550CF99-6F58-4BC4-BAA6-BE2A9ADAB035}' />
+    </worksheet>
+    <worksheet name='Employment/Gender (stacked)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Customers </run>
+            <run bold='true'>Employment by Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/EmploymentGenderstacked?rev=' id='128602341' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmploymentStatus]' derivation='None' name='[none:EmploymentStatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='Customers' />
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' value='n#,##0,.0K;(#,##0,.0K)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</rows>
+        <cols>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:EmploymentStatus:nk]</cols>
+      </table>
+      <simple-id uuid='{64F31583-D87E-4B44-A469-A9C7C2D2E427}' />
+    </worksheet>
+    <worksheet name='MAP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>State Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' />
+              <lod column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Latitude (generated)]' />
+              <lod column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Longitude (generated)]' />
+              <lod column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]' />
+              <geometry column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Latitude (generated)]</rows>
+        <cols>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2046F33A-C055-4382-9955-674A4F6702E8}' />
+    </worksheet>
+    <worksheet name='Marital Status/Gender (bars)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Marital Status &amp; Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/MaritalStatusGenderbars?rev=' id='128602344' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <manual-sort column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Single&quot;</bucket>
+              <bucket>&quot;Married&quot;</bucket>
+              <bucket>&quot;Divorced&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+            <format attr='title' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='Customers' />
+            <format attr='display' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='19' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='display' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</rows>
+        <cols>([federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk] / [federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk])</cols>
+        <mark-labels>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>709</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Divorced&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>660</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Divorced&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2779</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Married&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2519</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Married&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1170</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Single&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Marital Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1297</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Single&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C00262B2-B070-4438-A2D5-612872F0F5ED}' />
+    </worksheet>
+    <worksheet name='STATE TREEMAP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>State Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+            <encoding attr='space' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Longitude (generated)]' field-type='quantitative' max='35440791.409128889' min='-35864557.14341858' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Latitude (generated)]' field-type='quantitative' max='21984313.393191945' min='-20360577.284343138' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]' />
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' />
+              <geometry column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Latitude (generated)]</rows>
+        <cols>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1732B8BC-E4B3-431C-897A-3C276116EACF}' />
+    </worksheet>
+    <worksheet name='State Treemap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>State Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/StateTreemap?rev=' id='128599911' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' />
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' />
+              <text column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]' />
+              <text column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C82C0A45-5CE6-45B2-BEC0-8717D7D440E4}' />
+    </worksheet>
+    <worksheet name='State/Gender (bars)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Customers </run>
+            <run bold='true'>State by Gender Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/StateGenderbars?rev=' id='128602343' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+            <format attr='title' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='Customers' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' value='n#,##0,K;(#,##0,K)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</rows>
+        <cols>([federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk] / [federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk])</cols>
+        <mark-labels>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>875</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Arizona&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>828</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Arizona&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1582</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;California&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1568</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;California&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>455</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Nevada&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>427</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Nevada&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1334</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Oregon&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1267</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Oregon&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>412</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Washington&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>386</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Washington&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{E54F81F4-0274-4D67-89DA-557DACE13783}' />
+    </worksheet>
+    <worksheet name='State/Gender (stacked)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Customers </run>
+            <run bold='true'>State Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/StateGenderstacked?rev=' id='128602342' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='we_fn_use_c_marketing_customer_ (we_fn_use_c_marketing_customer_value_analysis)' name='federated.051nikv0z7lpsl12tzl2r0g11tk6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.051nikv0z7lpsl12tzl2r0g11tk6'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='Female' />
+                <alias key='&quot;M&quot;' value='Male' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Customer]' derivation='Count' name='[cnt:Customer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' scope='rows' value='Customers' />
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='hnaxis' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' value='n#,##0,K;(#,##0,K)' />
+            <format attr='text-format' field='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' value='n#,##0,.0K;(#,##0,.0K)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</rows>
+        <cols>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</cols>
+        <mark-labels>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>875</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Arizona&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>828</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Arizona&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1582</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;California&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1568</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;California&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>427</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Nevada&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>455</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Nevada&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1334</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Oregon&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1267</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Oregon&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>412</value>
+                <value>&quot;F&quot;</value>
+                <value>&quot;Washington&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]</field>
+                  <field>[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:State:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>386</value>
+                <value>&quot;M&quot;</value>
+                <value>&quot;Washington&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{1DF82BC1-55CD-4205-BB27-1C6686B27CCC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='previous_dashboard'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/LabTableau_17750519672260/previous_dashboard?rev=' id='128602345' path='/workbooks/LabTableau_17750519672260' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='82157' id='29' param='horz' type-v2='layout-flow' w='97538' x='1231' y='16653'>
+            <zone h='82157' id='25' type-v2='layout-basic' w='97538' x='1231' y='16653'>
+              <zone h='51223' id='24' param='horz' type-v2='layout-flow' w='97538' x='1231' y='47587'>
+                <zone h='51223' id='22' type-v2='layout-basic' w='97538' x='1231' y='47587'>
+                  <zone h='51223' id='21' param='horz' type-v2='layout-flow' w='97538' x='1231' y='47587'>
+                    <zone h='51223' id='19' type-v2='layout-basic' w='97538' x='1231' y='47587'>
+                      <zone h='51223' id='14' name='Marital Status/Gender (bars)' w='38769' x='60000' y='47587'>
+                        <layout-cache cell-count-w='6' minheight='208' non-cell-size-w='22' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='51223' id='18' name='State Treemap' w='58769' x='1231' y='47587'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='30934' id='10' name='Employment/Gender (bars)' w='97538' x='1231' y='16653'>
+                <layout-cache cell-count-w='10' minheight='251' non-cell-size-w='61' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='15463' id='3' name=' Gender Distribution' w='80307' x='1231' y='1190'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='64' h='15463' id='30' is-fixed='true' name='Employment/Gender (bars)' pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type-v2='color' w='17231' x='81538' y='1190'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='37' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='125' h='15388' id='3' is-fixed='true' name=' Gender Distribution' w='80307' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='30783' id='10' is-fixed='true' name='Employment/Gender (bars)' w='97538' x='1231' y='16817'>
+                  <layout-cache cell-count-w='10' minheight='251' non-cell-size-w='61' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='64' h='15388' id='30' name='Employment/Gender (bars)' pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type-v2='color' w='17231' x='81538' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50971' id='18' is-fixed='true' name='State Treemap' w='58769' x='1231' y='47600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50971' id='14' is-fixed='true' name='Marital Status/Gender (bars)' w='38769' x='60000' y='47600'>
+                  <layout-cache cell-count-w='6' minheight='208' non-cell-size-w='22' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7D92B639-37B8-456A-91D5-BCEE58DBB420}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name=' Gender Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{F88710B6-2861-4E0E-B7A1-78957CD34953}' />
+    </window>
+    <window class='worksheet' name='Employment/Gender (bars)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{F5B033B2-A288-4078-8205-EC335638D41F}' />
+    </window>
+    <window class='worksheet' name='Employment/Gender (stacked)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{E599570A-F25D-4DA8-9ED6-917EC04AC4BB}' />
+    </window>
+    <window class='worksheet' name='State/Gender (stacked)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{41F62E15-B375-40F5-BE87-707EDCD8C551}' />
+    </window>
+    <window class='worksheet' name='State/Gender (bars)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{3B3908B6-DA9A-4A4A-9C8C-1C9AA283F7EA}' />
+    </window>
+    <window class='worksheet' name='Marital Status/Gender (bars)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{92B96DAA-539B-4467-B85E-5165791553B7}' />
+    </window>
+    <window class='worksheet' name='State Treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{68BD7052-72A3-49B2-A7FE-286390032317}' />
+    </window>
+    <window class='dashboard' name='previous_dashboard'>
+      <viewpoints>
+        <viewpoint name=' Gender Distribution'>
+          <zoom type='fit-height' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Employment/Gender (bars)'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Marital Status/Gender (bars)'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='State Treemap'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DD7B8C28-85E3-475E-8247-BB50BBFD0ACE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='STATE TREEMAP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{49DE2F06-F8C8-4789-BA2B-6F6091BF6E05}' />
+    </window>
+    <window class='worksheet' name='MAP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.051nikv0z7lpsl12tzl2r0g11tk6].[cnt:Customer:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{0886AD99-8066-429C-B05B-09AB4C474A7B}' />
+    </window>
+  </windows>
+</workbook>
